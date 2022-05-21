@@ -1,0 +1,4 @@
+pymorphy2==0.9.1
+requests==2.27.1
+beautifulsoup4==4.10.0
+
