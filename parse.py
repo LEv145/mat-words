@@ -12,7 +12,7 @@ soup = BeautifulSoup(html.text)
 raw_words = soup.find_all("span", class_="lem")[10:113]
 
 
-words = [raw_word.text.lower() for raw_word in raw_words]
+words = sorted(raw_word.text.lower() for raw_word in raw_words)
 
 with open(Path("data/raw_mat.txt"), "w") as fp:
     fp.write("\n".join(words))
