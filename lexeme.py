@@ -8,13 +8,11 @@ def make_unique_list(iterable):
     return list(dict.fromkeys(iterable))
 
 
-
 morph = pymorphy2.MorphAnalyzer()
 
 
 with open(Path("data/raw_mat.txt")) as fp:
     raw_words = fp.read().split("\n")
-
 
 
 words = make_unique_list(
