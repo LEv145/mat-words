@@ -3,7 +3,6 @@ from pathlib import Path
 import pymorphy2
 
 
-
 def make_unique_list(iterable):
     return list(dict.fromkeys(iterable))
 
